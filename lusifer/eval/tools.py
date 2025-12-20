@@ -10,7 +10,7 @@ from lusifer.eval.constants import LANG_TO_CODES, MTEB_DS_TO_PROMPT, MULTILINGUA
 
 
 def get_eval_mteb_dataset(
-        mteb_model_meta: mteb.ModelMeta,
+        mteb_model_meta: mteb.models.model_meta.ModelMeta,
         dataset_name: str,
         langs: List[str],
         output_folder: str='results',
@@ -47,7 +47,7 @@ def get_eval_mteb_dataset(
 
 
 def get_eval_mteb(
-        mteb_model_meta: mteb.ModelMeta,
+        mteb_model_meta: mteb.models.model_meta.ModelMeta,
         output_folder: str='results',
         is_quick_run: bool=False,
 ):  

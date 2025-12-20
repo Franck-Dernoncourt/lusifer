@@ -83,7 +83,7 @@ class Lusifer(
             'model_dtype': model_dtype,
         }
 
-        self.mteb_model_meta = mteb.ModelMeta(
+        self.mteb_model_meta = mteb.models.model_meta.ModelMeta(
             name='Lusifer',
             revision='dev',
             release_date=date.today().strftime("%Y-%m-%d"),
@@ -551,7 +551,7 @@ class WrappedLusifer(nn.Module):
     ) -> None:
         super().__init__()
 
-        self.mteb_model_meta = mteb.ModelMeta(
+        self.mteb_model_meta = mteb.models.model_meta.ModelMeta(
             name='Lusifer',
             revision=model_revision,
             release_date=date.today().strftime("%Y-%m-%d"),
